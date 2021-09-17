@@ -1,0 +1,81 @@
+@import './variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $white-color;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.active {
+    border-color: $accent-color !important;
+
+    svg {
+        stroke: $accent-color;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: currentColor;
+}
+
+[aria-label= "pagination navigation"] {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: $black-color;
+    
+    ul {
+        
+        li {
+            margin: 0 0.5rem;
+            
+            div {
+                color: $white-color;
+            }
+            
+            button {
+                font-family: 'Poppins', sans-serif;
+                padding: 1.25rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: $white-color !important;
+
+                &.Mui-selected {
+                    color: white;
+                    background-color: $accent-color;
+                    
+                    &:hover {
+                        background-color: $accent-color;
+                    }
+                }
+
+                &:hover {
+                    background-color: $grey-color;
+                }
+            }
+        }
+    }
+}

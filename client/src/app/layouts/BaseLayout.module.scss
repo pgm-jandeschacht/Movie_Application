@@ -1,0 +1,8 @@
+@import '../styling/base/variables.scss';
+
+.main {
+    background-color: $black-color;
+    max-width: 80rem;
+    margin: auto;
+    padding: 4rem 2rem;
+}

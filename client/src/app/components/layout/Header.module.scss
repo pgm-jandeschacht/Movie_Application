@@ -1,0 +1,7 @@
+@import '../../styling/base/variables.scss';
+
+.header {
+    background-color: $dark-color;
+    padding: 0 2rem;
+    box-shadow: 0 3px 6px $black-shadow-color;
+}

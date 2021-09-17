@@ -1,0 +1,20 @@
+@import '../../../styling/base/variables.scss';
+
+.search {
+    position: relative;
+    background-color: $dark-color;
+    z-index: 1;
+    
+    &__btn {
+        background-color: $dark-color;
+        padding: 0.5rem 1.25rem;
+        display: flex;
+        align-items: center;
+        color: var(--white-color);
+        font-size: 1.5rem;
+
+        &.clicked {
+            color: $accent-color;
+        }
+    }
+}

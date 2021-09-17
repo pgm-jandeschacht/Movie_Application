@@ -1,0 +1,66 @@
+@import '../../styling/base/variables.scss';
+
+.footer {
+    padding: 3rem 2rem;
+    background-color: $dark-color;
+
+    &__container {
+        max-width: 80rem;
+        margin: auto;    
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 45rem) {
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+
+        img {
+            width: 12rem;
+            height: 100%;
+            margin-bottom: 2.5rem;
+            @media (min-width: 45rem) {
+                margin-bottom: 0;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 45rem) {
+                flex-direction: row;
+            }
+
+            li {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+                @media (min-width: 45rem) {
+                    margin-left: 1.75rem;
+                }
+
+                a {
+                    padding: 0 ;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__legal {
+        margin-top: 3rem;
+        text-align: center;
+        
+        p {
+            font-size: 0.8rem;
+
+            & .red {
+                color: $accent-color;
+                margin: 0 0.5rem;
+            }
+        }
+    }
+}

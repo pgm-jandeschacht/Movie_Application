@@ -1,0 +1,17 @@
+.genres {
+    position: relative;
+
+    &.hide {
+        display: none;
+        margin-top: 2rem;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+    }
+}

@@ -1,0 +1,80 @@
+@import '../../styling/base/variables.scss';
+
+.movies__list__item {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    @media (min-width: 36rem) {
+        width: 50%;
+    }
+    @media (min-width: 48rem) {
+        width: 33%;
+    }
+    @media (min-width: 70rem) {
+        width: 25%;
+    }
+
+    &__link {
+        margin-bottom: 1.5rem;
+        border-radius: 5px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.2s ease-in-out;
+        background-color: $dark-color;
+        @media (min-width: 36rem) {
+        margin-right: 1.5rem;
+        }
+
+        &__img {
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__text {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+
+            .title {
+                font-size: 1.75rem;
+                font-weight: 700;
+            }
+
+            .container {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1rem;
+                font-weight: 600;
+
+                .rating {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        width: 1.5rem;
+                        height: 100%;
+                        margin-right: 0.5rem;
+                        stroke: $accent-color;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-0.75rem) scale(1.07);
+            background-color: $grey-color;
+        }
+    }
+}

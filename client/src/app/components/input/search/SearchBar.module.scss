@@ -1,0 +1,28 @@
+@import '../../../styling/base/variables.scss';
+
+.searchbar {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: -3.5rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    input {
+        border-radius: 2px;
+        padding: 0.25rem 0.75rem;
+        color: $dark-color;
+        border: none;
+        font-size: 1rem;
+        
+        &::placeholder {
+            font-family: 'Poppins';
+        }
+    }
+}
+
+.clicked {
+    transform: translateX(calc(-100% + 3.25rem)) translateY(-50%);
+    opacity: 1;
+}

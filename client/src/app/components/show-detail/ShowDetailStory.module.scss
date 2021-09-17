@@ -1,0 +1,92 @@
+@import '../../styling/base/variables.scss';
+
+.movie_detail__extra {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @media (min-width: 55rem) {
+        flex-wrap: nowrap;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        width: 100%;
+        margin-right: 0;
+        @media (min-width: 55rem) {
+            margin-right: 2rem;
+            width: 50%;
+        }
+        
+        &__story {
+            background-color: $dark-color;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 25px $black-shadow-color;
+            
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    
+    &__info {
+        background-color: $dark-color;
+        box-shadow: 0 0 25px $black-shadow-color;
+        padding: 1.5rem;
+        width: 100%;
+        @media (min-width: 55rem) {
+            width: 50%;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                margin-bottom: 1rem;
+            }
+        }    
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+        color: $accent-color;
+    }
+    
+    .info {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        font-weight: 500;
+    }
+
+    .long {
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            li {
+                width: auto;
+
+                &::after {
+                    content: ','
+                }
+
+                &:last-of-type::after {
+                    content: '';
+                }
+            }
+        }
+    }
+}

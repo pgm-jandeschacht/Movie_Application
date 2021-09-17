@@ -1,0 +1,27 @@
+@import '../../../styling/base/variables.scss';
+
+.textbox {
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Poppins';
+    color: $dark-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+    input {
+        font-size: 1.1rem;
+        outline: none;
+        padding: 0.4rem 0.8rem;
+        border: none;
+        width: 15rem;
+        margin-top: 0.3rem;
+        border-radius: 4px;
+        background-color: rgb(238, 238, 238);
+        transition: all 0.2s ease-in-out;
+        border: 2px solid transparent;
+
+        &:focus {
+            border: 2px solid $accent-color;
+        }
+    }
+}

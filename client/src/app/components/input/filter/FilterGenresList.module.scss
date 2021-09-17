@@ -1,0 +1,35 @@
+@import '../../../styling/base/variables.scss';
+
+.genres__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        margin: 0 0.5rem 1rem 0.5rem;
+        display: flex;
+        
+        label {
+            border-radius: 3px;
+            background-color: $grey-color;
+            padding: 0.3rem 0.6rem;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $accent-color;
+            }
+
+            &.checked {
+                background-color: $accent-color;
+            }
+        }
+
+        button {
+            cursor: pointer;
+        }
+    }
+    
+    .hide {
+        display: none;
+    }
+}

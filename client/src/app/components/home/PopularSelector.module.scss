@@ -1,0 +1,42 @@
+@import '../../styling/base/variables.scss';
+
+.popular__title {
+    font-size: 2rem;
+}
+
+.popular__selectors {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    @media (min-width: 40rem) {
+        flex-direction: row;
+    }
+
+    &__item {
+        font-size: 3.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: $grey-color;
+        transition: all 0.2s ease-in-out;
+        @media (min-width: 40rem) {
+            padding: 0 1.5rem;
+        }
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &:hover {
+            color: $white-color;
+        }
+
+        &.active {
+            transition: all 0.2s ease-in-out;
+            color: $accent-color;
+        }
+    }
+}
